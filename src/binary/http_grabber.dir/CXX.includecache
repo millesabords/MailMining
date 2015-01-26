@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/protectic/Desktop/http_grabber-0.1.0/src/http_client_async.cpp
+iostream
+-
+istream
+-
+ostream
+-
+string
+-
+boost/asio.hpp
+-
+boost/bind.hpp
+-
+

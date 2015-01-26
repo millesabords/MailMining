@@ -1,0 +1,2 @@
+PEG at Work
+Say the TSJ Sports Conglomerate, a fictional company, is trading at 19 times earnings (P/E = 19) and has earnings growing at 30%. From this you can calculate that the TSJ has a PEG of 0.63 (19/30=0.63), which is pretty good by GARP standards.

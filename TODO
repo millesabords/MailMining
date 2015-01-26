@@ -1,0 +1,48 @@
+- new functionnal idea: retrieve personnal mail using gmail python or other tools to retrieve it and regroup job listing propositions
+- solve problem with iso99... to utf8 -> abandon libxml++ and glib::ustring -> use only libxml2 with unsigned chars
+- ajouter un namespace specifique a chaque lib interne et un ou plusieurs namespaces au code principal (low prio)
+- what about html5 -> is it entirely ok to parse it with an xml sax parser?
+- on_characters() callback just deals with characters written outside any proper xml tag
+- how about parsing javascript...? (using a third party js compiler and hacking its behavior?)
+
+wchar_t dans read_content
+
+- grammar into class hierarchy: how to virtualize this so that we can instantiate one for csv files, and etc...?
+- cmake: rule to build static lib, and to be able to compile separately
+- boost progress
+- yahoo finance daily info day by day and even in the close past -> new parsing system?
+- ticks should contain more data: smtg like: "Id|Isin|Name|Exchange|Type|Industry"
+- singleton manager classes
+- using templated classes or dynamically allocated polymorphic classes from the main, based on the file extension
+- building a logger class
+- boost spirit multi-thread implicitely? -> if no, use normal
+   iterators and use getline(), as in
+   http://boost-spirit.com/home/2010/11/07/multi-threaded-qi-6-hours-37-seconds/,
+   except for that the results (semantic actions) must be not shared
+   during construction and concatained only at the end of parsing ->
+   also problem of unordered result...
+- parallel computation during process
+- setting up tests with ctest/cdash or with boost:
+http://cmake.org/Wiki/CMake/Testing_With_CTest
+ +
+http://www.cmake.org/cmake/help/v2.8.8/ctest.html
+ +
+ Using the dashboard scripts
+The dashboard branch contains a dashboard client helper script. Use these commands to track it:
+    $ mkdir -p ~/Dashboards/CMakeScripts 
+    $ cd ~/Dashboards/CMakeScripts 
+    $ git init 
+    $ git remote add -t dashboard origin git://cmake.org/cmake.git 
+    $ git pull origin 
+The cmake_common.cmake script contains setup instructions in its top comments. Update the dashboard branch to get the latest version of this script by simply running
+    $ git pull origin 
+
+$ cmake -DCMAKE_BUILD_TYPE=Debug \
+>       -DCMAKE_C_COMPILER=gcc   \
+>       -DCMAKE_CXX_COMPILER=g++ \
+>       ../cpp-netlib
+
+- deal with compilation related secondary issues
+make -k || mpg123 -k 3000 -n 200 bitter.mp3 ~/Music/samples/bitter.mp3 && mpg123 -k 3000 -n 200 bitter.mp3 ~/Music/samples/buenos.mp3
+next/previous error in emacs is not re-entrant for header files (C-x+` ou bien M-g-n ou p)
+
